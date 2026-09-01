@@ -29,7 +29,7 @@ The independent KPI is deduplicated successful recovery, supplemented by recover
 ## Where should ₹10 Cr go?
 
 ### Strategic Recommendation: Capital Deployment into Better Borrower Targeting
-We recommend allocating the ₹10 Cr capital investment exclusively to upgrade our core targeting engine. The data forensics audit proved that aggregate monthly cash recoveries are heavily distorted by duplicate ledger logs (₹2.59 Cr) and population mix biases (Simpson's Paradox). Escalating collection costs by simply hiring more human agents or buying raw telephony infrastructure will only scale these systemic errors. 
+I recommend allocating the ₹10 Cr capital investment exclusively to upgrade our core targeting engine. The data forensics audit proved that aggregate monthly cash recoveries are heavily distorted by duplicate ledger logs (₹2.59 Cr) and population mix biases (Simpson's Paradox). Escalating collection costs by simply hiring more human agents or buying raw telephony infrastructure will only scale these systemic errors. 
 
 Upgrading the targeting system addresses the structural root cause: it improves predictive risk stratification so we stop wasting resources on unrecoverable cohorts.
 
