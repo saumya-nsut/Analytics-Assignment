@@ -28,28 +28,15 @@ The independent KPI is deduplicated successful recovery, supplemented by recover
 
 ## Where should ₹10 Cr go?
 
-**Recommended direction: Better borrower targeting — but only as a controlled, staged experiment.**
+### Strategic Recommendation: Data-Targeting Experiment
+The current historical dataset lacks a reliable control group, cost logs, or unique campaign exposure IDs. Proposing a definitive ROI or a fixed break-even horizon on this data alone would create false precision. 
 
-The current dataset is insufficient to produce a defensible numerical causal lift, ROI or break-even estimate. The correct response is to state that limitation rather than create false precision.
+The most defensible strategy is to commit a subset of the ₹10 Cr to run a staged, randomized control trial (RCT) to evaluate the modified borrower targeting system.
 
-### Experiment
-
-- Treatment: randomly assigned eligible accounts under the new targeting strategy.
-- Control: current targeting strategy.
-- Stratify by material risk/DPD/portfolio groups.
-- Pre-register a fixed recovery window.
-- Primary outcome: incremental deduplicated recovery.
-- Secondary outcomes: recovery per targeted account, recovery relative to targeted outstanding and complaint rate.
-- Require reliable treatment/exposure IDs and verified cost inputs.
-
-**Expected incremental recovery:** measured from experimental lift × eligible population.
-
-**Estimated cost:** staged spend, up to ₹10 Cr.
-
-**Expected ROI:** incremental recovery ÷ incremental spend.
-
-**Break-even:** spend ÷ incremental recovery rate.
-
-**Downside:** zero lift, targeting errors or adverse borrower outcomes.
-
-**Confidence:** high that the 11% headline is not a sustained trend; low for numerical causal ROI until the experiment is run.
+### Staged Trial Architecture (RCT)
+*   **Treatment Group:** Eligible delinquent accounts routed via the modified rule targeting engine.
+*   **Control Group:** A matched subset of accounts held on legacy baseline routing parameters.
+*   **Stratification:** Accounts will be strictly stratified across identical risk bands and DPD (Days Past Due) cohorts to prevent mix shifts from skewing the results.
+*   **Evaluation Metric:** Core recovery rate, measured as:
+    $$\Delta \text{ Recovery Rate} = \frac{\text{Success Recoveries}}{\text{Total Portfolio Outstanding}}$$
+*   **Downside Controls:** Implement a weekly lookback window to immediately halt the trial if targeting errors degrade contact rates or increase customer complaints.
