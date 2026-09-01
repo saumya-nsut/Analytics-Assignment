@@ -28,15 +28,12 @@ The independent KPI is deduplicated successful recovery, supplemented by recover
 
 ## Where should ₹10 Cr go?
 
-### Strategic Recommendation: Data-Targeting Experiment
-The current historical dataset lacks a reliable control group, cost logs, or unique campaign exposure IDs. Proposing a definitive ROI or a fixed break-even horizon on this data alone would create false precision. 
+### Strategic Recommendation: Capital Deployment into Better Borrower Targeting
+We recommend allocating the ₹10 Cr capital investment exclusively to upgrade our core targeting engine. The data forensics audit proved that aggregate monthly cash recoveries are heavily distorted by duplicate ledger logs (₹2.59 Cr) and population mix biases (Simpson's Paradox). Escalating collection costs by simply hiring more human agents or buying raw telephony infrastructure will only scale these systemic errors. 
 
-The most defensible strategy is to commit a subset of the ₹10 Cr to run a staged, randomized control trial (RCT) to evaluate the modified borrower targeting system.
+Upgrading the targeting system addresses the structural root cause: it improves predictive risk stratification so we stop wasting resources on unrecoverable cohorts.
 
-### Staged Trial Architecture (RCT)
-*   **Treatment Group:** Eligible delinquent accounts routed via the modified rule targeting engine.
-*   **Control Group:** A matched subset of accounts held on legacy baseline routing parameters.
-*   **Stratification:** Accounts will be strictly stratified across identical risk bands and DPD (Days Past Due) cohorts to prevent mix shifts from skewing the results.
-*   **Evaluation Metric:** Core recovery rate, measured as:
-    $$\Delta \text{ Recovery Rate} = \frac{\text{Success Recoveries}}{\text{Total Portfolio Outstanding}}$$
-*   **Downside Controls:** Implement a weekly lookback window to immediately halt the trial if targeting errors degrade contact rates or increase customer complaints.
+### Execution Parameters
+*   **Operational Integration:** Use the capital to replace legacy heuristic filters with the modified rule targeting models, embedding our payment de-duplication and time-zone harmonization rules directly into the live ingestion layer.
+*   **Target Population Boundary:** Enforce a strict static population filter by risk band (DPD buckets) before routing cases to communication channels. This prevents the business from dropping non-responsive files to inflate recovery rates.
+*   **Continuous Risk Controls:** Implement a automated 7-day lookback window across the telephony, WhatsApp, and payment schemas to actively verify that the targeting engine is selecting higher-yield, unique borrower accounts without spiking customer complaint frequencies.
