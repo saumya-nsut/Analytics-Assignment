@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Collections Performance</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f4f4f4;margin:0;color:#222}
+.wrap{max-width:1150px;margin:20px auto;background:#fff;padding:22px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.card,.panel{border:1px solid #ccc;border-radius:7px;padding:14px;background:#fff}
+.k{font-size:12px;color:#666}.v{font-size:24px;font-weight:bold;margin-top:5px}
+.row{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:12px}
+h1{margin:0 0 4px} h3{margin-top:0}
+</style></head><body><div class="wrap">
+<h1>Collections Performance</h1>
+<p>Complete months: Jan–Jul 2026. August is partial.</p>
+<div class="grid">
+<div class="card"><div class="k">July recovery</div><div class="v">₹18.72 Cr</div></div>
+<div class="card"><div class="k">Jun → Jul</div><div class="v">6.65%</div></div>
+<div class="card"><div class="k">Jan → Jul</div><div class="v">0.01%</div></div>
+<div class="card"><div class="k">Payment duplicate impact</div><div class="v">₹2.59 Cr</div></div>
+</div>
+<div class="row">
+<div class="panel"><h3>Monthly recovery (₹ Cr)</h3>
+<svg width="700" height="210"><polyline points="40.0,38.9 143.3,180.0 246.7,25.0 350.0,138.7 453.3,63.5 556.7,135.3 660.0,38.8" fill="none" stroke="black" stroke-width="2"/><circle cx="40.0" cy="38.9" r="4"/><circle cx="143.3" cy="180.0" r="4"/><circle cx="246.7" cy="25.0" r="4"/><circle cx="350.0" cy="138.7" r="4"/><circle cx="453.3" cy="63.5" r="4"/><circle cx="556.7" cy="135.3" r="4"/><circle cx="660.0" cy="38.8" r="4"/><text x="40.0" y="195" text-anchor="middle" font-size="11">01</text><text x="143.3" y="195" text-anchor="middle" font-size="11">02</text><text x="246.7" y="195" text-anchor="middle" font-size="11">03</text><text x="350.0" y="195" text-anchor="middle" font-size="11">04</text><text x="453.3" y="195" text-anchor="middle" font-size="11">05</text><text x="556.7" y="195" text-anchor="middle" font-size="11">06</text><text x="660.0" y="195" text-anchor="middle" font-size="11">07</text></svg></div>
+<div class="panel"><h3>Decision</h3>
+<p><b>The 11% headline is not a sustained improvement.</b></p>
+<p>Recommendation: test <b>better borrower targeting</b> through controlled experimentation before scaling.</p>
+</div></div>
+<div class="row">
+<div class="panel"><h3>Data quality</h3>
+<p>Duplicate payment IDs: <b>500</b></p>
+<p>Event borrower-ID mismatch: <b>100.0%</b></p>
+<p>Status chronology anomalies: <b>30,191</b></p>
+</div>
+<div class="panel"><h3>Confidence</h3>
+<p><b>High:</b> headline is not sustained.</p>
+<p><b>Low:</b> causal lift/ROI without an experiment and cost data.</p>
+</div></div>
+</div></body></html>
